@@ -26,9 +26,9 @@ class ViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        redColorView.layer.cornerRadius = 70
-        yellowColorView.layer.cornerRadius = 70
-        greenColorVeiw.layer.cornerRadius = 70
+        redColorView.layer.cornerRadius = redColorView.frame.width / 2
+        yellowColorView.layer.cornerRadius = yellowColorView.frame.width / 2
+        greenColorVeiw.layer.cornerRadius = greenColorVeiw.frame.width / 2
     }
 
     @IBAction private func startButtonPressed() {
